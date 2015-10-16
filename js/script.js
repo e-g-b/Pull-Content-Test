@@ -51,7 +51,7 @@ function(
         */
         render: function() {
 
-			console.log('document is ready and render is called');
+			console.log('Document is ready and render is called');
 
             this.prestoAPIparse();
 
@@ -108,11 +108,11 @@ function(
                 method: "POST",
                 cache: true,
                 url: "http://presentation-api.production.gannettdigital.com/v4/fronts/121/life",
-                data: { style: "composite", transform: "full", style: "composite", transform: "full", siteId: "121", frontName: "life", consumer: "Application", api_key: "w634zsk6v46v2pj96z8myhqu"},
+                data: {style: "composite", transform: "full", style: "composite", transform: "full", siteId: "121", frontName: "life", consumer: "Application", api_key: "w634zsk6v46v2pj96z8myhqu"},
                 dataType: 'jsonp'
-            }).done(function(data) {
+            }).done(_.bind(function(data) {
                 console.log(JSON.stringify(data));
-            });
+            }, this));
 
         },
 
