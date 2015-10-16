@@ -1,6 +1,5 @@
 require.config({
     shim: {
-    	// Jquery Easing
         'http://www.gannett-cdn.com/labs/globals/scripts/jquery-easing-1.3.min.js': {
             deps: ['jquery']
         }
@@ -52,7 +51,7 @@ function(
         */
         render: function() {
 
-        	console.log('document is ready and render is called');
+			console.log('document is ready and render is called');
 
             this.prestoAPIparse();
 
@@ -109,10 +108,10 @@ function(
                 method: "POST",
                 cache: true,
                 url: "http://presentation-api.production.gannettdigital.com/v4/fronts/121/life",
-                data: { style: "composite", transform: "full", style:"composite", transform:"full", siteId:"121", frontName:"life", consumer:"Application" },
+                data: { style: "composite", transform: "full", style: "composite", transform: "full", siteId: "121", frontName: "life", consumer: "Application", api_key: "w634zsk6v46v2pj96z8myhqu"},
                 dataType: 'jsonp'
             }).done(function(data) {
-                console.log(data);
+                console.log(JSON.stringify(data));
             });
 
         },
