@@ -41,13 +41,18 @@ function(
 
             console.log('Labs View Initialized...');
 
-            this.render();
+			$(document).ready(_.bind(function() {
+				this.render();
+			}, this));
+
         },
 
         /*
 		* Render is where the app will do any dynamic work in the DOM to generate the app
         */
         render: function() {
+
+        	console.log('document is ready and render is called');
 
             this.prestoAPIparse();
 
@@ -94,7 +99,6 @@ function(
         clearDelay: function() {
 
             for(i=0; this.delay.length > i; i++) {
-
                 clearTimeout(this.delay[i]);
             }
         },
@@ -104,7 +108,7 @@ function(
             $.ajax({
                 method: "POST",
                 cache: true,
-                url: "http://presentation-api.production.gannettdigital.com/v4/fronts/121/life/",
+                url: "http://presentation-api.production.gannettdigital.com/v4/fronts/121/life",
                 data: { style: "composite", transform: "full", style:"composite", transform:"full", siteId:"121", frontName:"life", consumer:"Application" },
                 dataType: 'jsonp'
             }).done(function(data) {
