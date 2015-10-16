@@ -1,0 +1,198 @@
+/* ========================================================================== */
+/* CSS Development Template
+   style.css */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* FONTS */
+/* ========================================================================== */
+@font-face {
+    font-family:'Futura Today Light';
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-light/futura-today-light.eot") format("eot");
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-light/futura-today-light.woff") format("woff"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-light/futura-today-light.ttf") format("truetype"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-light/futura-today-light.svg") format("svg");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family:'Futura Today Normal';
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-normal/futura-today-normal.eot") format("eot");
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-normal/futura-today-normal.woff") format("woff"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-normal/futura-today-normal.ttf") format("truetype"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-normal/futura-today-normal.svg") format("svg");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:'Futura Today Demibold';
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-demibold/futura-today-demibold.eot") format("eot");
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-demibold/futura-today-demibold.woff") format("woff"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-demibold/futura-today-demibold.ttf") format("truetype"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-demibold/futura-today-demibold.svg") format("svg");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:'Futura Today Bold';
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-bold/futura-today-bold.eot") format("eot");
+    src:url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-bold/futura-today-bold.woff") format("woff"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-bold/futura-today-bold.ttf") format("truetype"),
+        url("http://www.gannett-cdn.com/labs/globals/fonts/futura-today-bold/futura-today-bold.svg") format("svg");
+    font-weight: 700;
+}
+
+/* ========================================================================== */
+/* BASE STYLES */
+/* ========================================================================== */
+html, body {
+  height: 100%;
+}
+
+.development-template,
+.development-template * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.development-template {
+    background: rgb(235,235,235);
+    max-width: 1230px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.development-template a,
+.development-template a:hover,
+.development-template a:active,
+.development-template a:focus {
+    background: url('../images/transparent-pixel.gif') repeat;
+    border: 0;
+    display: block;
+    height: 100%;
+    outline: 0;
+    outline-width: 0; 
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.0);
+}
+
+.development-template a img,
+.development-template a img:focus {
+    border: 0;
+    outline: 0;
+    outline-width: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.0);
+}
+
+.development-template .contentWrap {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ========================================================================== */
+/* Images */
+/* ========================================================================== */
+.development-template img {
+    background: transparent;
+    display: block;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 PNG Fix */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    zoom: 1;
+}
+
+/* ========================================================================== */
+/* CSS Media Queries */
+/* ========================================================================== */
+/*....................Full Width....................*/
+@media only screen and (max-width: 1230px) {
+
+}
+/*....................iPad Portrait....................*/
+@media only screen and (max-width: 1024px) {
+
+}
+/*....................iPad Landscape....................*/
+@media only screen and (max-width: 768px) {
+
+}
+/*....................iPhone 6 Plus....................*/
+@media only screen and (max-width: 414px) {
+
+}
+/*....................iPhone 6....................*/
+@media only screen and (max-width: 375px) {
+
+}
+/*....................iPhone 5....................*/
+@media only screen and (max-width: 320px) {
+
+}
+
+/* ========================================================================== */
+/* CSS Mobile Specific Media Queries */
+/* ========================================================================== */
+/*....................iPhone 5....................*/
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+
+/*....................iPhone 6....................*/
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+} */
+
+/*....................iPhone 6 Plus....................*/
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
+
+} */
+
+/*....................iPad 1 - Landscape....................*/
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+
+} */
+
+/*....................iPad 1 - Portrait....................*/
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+} */
+
+/*....................iPad 2, iPad Mini - Landscape....................*/
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+
+/*....................iPad 2, iPad Mini - Portrait....................*/
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
