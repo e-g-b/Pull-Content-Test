@@ -107,8 +107,8 @@ function(
             $.ajax({
                 method: "GET",
                 cache: true,
-                url: "http://presentation-api.production.gannettdigital.com/v4/fronts/121/life",
-                data: {style: "composite", transform: "full", siteId: "121", frontName: "life", consumer: "Lab", api_key: "w634zsk6v46v2pj96z8myhqu"},
+                url: "http://api.gannett-cdn.com/presentation/v4/fronts/121/life",
+                data: {style: "composite", transform: "full", siteId: "121", frontName: "life", consumer: "true", api_key: "w634zsk6v46v2pj96z8myhqu"},
                 dataType: 'jsonp'
             }).done(_.bind(function(data) {
                 console.log(JSON.stringify(data));
